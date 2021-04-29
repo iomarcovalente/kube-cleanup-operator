@@ -1,5 +1,8 @@
 # Kubernetes cleanup operator
 
+## Note
+This personal is to address https://github.com/aws/containers-roadmap/issues/255 as we need a way to remove jobs with a controller based on a label.
+
 [![Build Status](https://travis-ci.org/lwolf/kube-cleanup-operator.svg?branch=master)](https://travis-ci.org/lwolf/kube-cleanup-operator)
 [![Go Report Card](https://goreportcard.com/badge/github.com/lwolf/kube-cleanup-operator)](https://goreportcard.com/report/github.com/lwolf/kube-cleanup-operator)
 [![Docker Repository on Quay](https://quay.io/repository/lwolf/kube-cleanup-operator/status "Docker Repository on Quay")](https://quay.io/repository/lwolf/kube-cleanup-operator)
@@ -87,7 +90,7 @@ Pre v0.7.0
             Set this flag when running outside of the cluster.
       -keep-successful
             the number of hours to keep a successful job
-            -1 - forever 
+            -1 - forever
             0  - never (default)
             >0 - number of hours
       -keep-failures
@@ -102,7 +105,7 @@ Pre v0.7.0
             >0 - number of hours
       -dry-run
             Perform dry run, print only
-``` 
+```
 
 After v0.7.0
 
@@ -140,7 +143,7 @@ Usage of ./bin/kube-cleanup-operator:
         Delete only jobs and pods that meet label selector requirements. #See https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 ```
 
-### Optional parameters 
+### Optional parameters
 
 DISCLAIMER: These parameters are not supported on this project since they are implemented by the underlying libraries. Any malfunction regarding the use them is not covered by this GitHub repository. They are included in this documentation since the debugging process is simplified.
 

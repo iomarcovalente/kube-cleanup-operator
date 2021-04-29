@@ -1,0 +1,4 @@
+image-name: kube-cleanup-operator
+versions:
+  - tag: v0.8.2
+    description: Forked from lwolf/kube-cleanup-operator - built from iomarcovalente/kube-cleanup-operator
